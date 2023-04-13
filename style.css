@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: rgb(40, 73, 167);
+    
+}
+body::before{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: blueviolet;
+    z-index: -1;
+    top: 20px;
+    left: 40px;
+}
+body::after{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: lightgreen;
+    z-index: -1;
+    bottom: 20px;
+    right: 40px;
+}
+.container{
+    width: 1200px;
+    height: 600px;
+    border-radius: 30px;
+    background: rgba(202, 192, 192, 0.2);
+    backdrop-filter: blur(50px);
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 0 70px;
+    /* color: white; */
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    color: white;
+}
+.left{
+    display: flex;
+}
+.left ul{
+    display: flex;
+}
+.left i{
+    color: orange;
+    font-size: 40px;
+}
+.left ul li{
+    list-style: none;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-left: 60px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+.left ul li:hover{
+    color: lightgreen;
+}
+.right button{
+    padding: 7px 10px;
+    font-weight: bold;
+    color: white;
+    background: black;
+    border-radius: 5px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+
+}
+.right button:active{
+    color: lightgreen;
+}
+.body{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.lleft{
+    color: white;
+}
+.lleft h1{
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.lleft p{
+    font-size: 15px;
+    padding-bottom: 40px;
+}
+.rright img{
+    width: 430px;
+}
+.lleft button{
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: transparent;
+    color: white;
+    background: blueviolet;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all linear 0.1s;
+}
+.lleft button:active{
+    color: lightgreen;
+}
